@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://cybergeni.github.io/huddle-landing-page-single)
+- Live Site URL: [Github Pages](https://cybergeni.github.io/huddle-landing-page-single)
 
 ## My process
 
@@ -38,7 +38,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Treasure Ajefu](https://www.your-site.com)
 - Frontend Mentor - [@cybergeni](https://www.frontendmentor.io/profile/cybergeni)
 - Twitter - [@devfrompluto](https://www.twitter.com/devfrompluto)
 
