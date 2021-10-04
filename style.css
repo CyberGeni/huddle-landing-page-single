@@ -132,7 +132,7 @@ span a {
         text-align: left;
         width: 60%;
         line-height: 40px;
-        font-size: 35px;
+        font-size: 40px;
     }
     p {
         display: flex;
@@ -141,6 +141,7 @@ span a {
         width: 70%;
         margin-top: 40px;
         margin-bottom: 20px;
+        font-size: 24px;
 
     }
     button {
