@@ -97,7 +97,7 @@ code a {
     font-size: 12px;
 }
 /* media queries */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     body {
         background-image: url(images/bg-desktop.svg);
         height: 80vh;
