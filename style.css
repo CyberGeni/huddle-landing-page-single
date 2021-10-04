@@ -1,106 +1,171 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* fundamentals */
+* {
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+main {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    height: 100%;
 }
-.header {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    margin-top: 50px;
-    width: 75%;
-    font-size: 3em;
-}
-.first-heading {
-    font-size: 21px;
-    color: hsl(229, 6%, 66%);
-    font-weight: 300;
-}
-.second-heading {
-    color: hsl(234, 12%, 34%);
-    font-size: 21px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-}
-.third-heading {
-    display: flex;
-    font-size: 18px;
-    font-weight: 400;
-    color: hsl(229, 6%, 66%);
-    margin-bottom: 50px;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    max-width: 400px;
-    height: 250px;
-    margin: auto;
-    margin-bottom: 35px;
-    padding: 35px;
-    box-shadow: 0 10px 50px #ccc;
-    border-radius: 8px;
-    border-top: 4px solid hsl(180, 62%, 55%);
-}
-.card2 {
-    border-top: 4px solid hsl(0, 78%, 62%);
-}
-.card3 {
-    border-top: 4px solid hsl(34, 97%, 64%);
-}
-.card4 {
-    border-top: 4px solid hsl(212, 86%, 64%);
 
+/* hero */
+
+header img {
+    width: 200px;
+    height: 100px;
+    margin-left: 22px;
 }
-svg {
+
+.hero {
+    width: 95%;
     display: flex;
-    height: auto;
-    align-self: self-end;
-    margin-top: auto;
+    margin: auto;
+    max-width: 400px;
 }
-h3 {
-    font-size: 23px;
-    color: hsl(234, 12%, 34%);
+section:nth-child(2) {
+    margin: auto;
+    width: 80%;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
 }
 p {
-    font-size: 15px;
-    margin-top: 15px;
-    line-height: 30px;
-    letter-spacing: 0.5px;
-    color: hsl(229, 6%, 66%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 25px;
 }
-@media screen and (min-width: 980px) {
-    .card {
-        height: 200px;
-        width: 250px;
-        margin: auto;
-        margin
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 15px 80px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    color: hsl(257, 40%, 49%);
+}
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+aside {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+}
+i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+aside i {
+    font-size: 15px;
+    display: flex;
+    padding: 12px 12px 12px 12px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+code { 
+    font-size: 11px; 
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+}
+code a { 
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+/* media queries */
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        height: 80vh;
     }
-    .card1 {
-        margin-right: 30px;
-    }
-    .card2 {
-        margin-bottom: 30px;
-    }
-    .card4 {
-        margin-left: 30px;
-    }
-    .main-card {
-        display: flex;
+    main {
         flex-direction: row;
+        flex-grow: 2;
+        margin-bottom: 300px;
     }
-    .card .middle-card {
+    .hero {
+        width: 100%;
+        height: auto;
         display: flex;
-        flex-direction: column;
+        margin: auto;
+        align-content: center;
+        max-width: 900px;
+        min-width: 650px;
+        flex-grow: 2;
+    }
+    div {
+        display: flex;
+        align-content: center;
+        height: 100%;
+        margin: auto;
+        margin-left: 9%;
+        margin-right: 5%;
+        flex-grow: 2;
+    }
+    section:nth-child(2) {
+        justify-self: flex-start;
+        text-align: left;
+        width: 70%;
+    }
+    h1 {
+        text-align: left;
+        width: 60%;
+        line-height: 55px;
+        font-size: 40px;
+    }
+    p {
+        display: flex;
+        justify-self: flex-start;
+        text-align: left;
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    button {
+        margin: 0;
+    }
+
+    aside {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 35px;
+
+        z-index: 10000;
+    }
+    span {
+        font-family: 'Poppins';
+        color: aliceblue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
     }
 }
