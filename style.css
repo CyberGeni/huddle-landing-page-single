@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* fundamentals */
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* hero */
+
+header img {
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.hero {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    max-width: 400px;
+}
+section:nth-child(2) {
+    margin: auto;
+    width: 80%;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+button {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 80px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    margin: auto;
+    color: hsl(257, 40%, 49%);
+}
+aside {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 30px;
+}
+aside i {
+    font-size: 15px;
+    display: flex;
+    padding: 12px 12px 12px 12px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
